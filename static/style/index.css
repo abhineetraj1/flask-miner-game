@@ -1,0 +1,46 @@
+body{
+	background: #003459;
+	font-family: Cambria Math;
+}
+nav{
+	width: 96%;
+	margin: 2%;
+	color: white;
+	font-size: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+span{
+	font-size: 30px;
+}
+button{
+	background: white;
+	font-size: 15px;
+	color: black;
+	border: solid;
+	border-color: white;
+	border-radius: 10px;
+	padding: 7px;
+}
+#content{
+	text-align: center;
+	margin: 5%;
+	width: 90%;
+	font-size: 19px;
+	color: white;
+}
+table{
+	width: 360px;
+	margin: 10px;
+	box-shadow: 0px 0px 10px black;
+	margin-top: 50px;
+	border-radius: 20px;
+}
+td{
+	width: 50%;
+	color: black;
+	font-size: 15px;
+	text-align: left;
+	background: white;
+	padding: 7px;
+}

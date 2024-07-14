@@ -1,0 +1,59 @@
+body{
+	background: #003459;
+	font-family: Cambria Math;
+}
+form{
+	background: white;
+	width: 300px;
+	margin-top: 10vh;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 0px 0px 10px black;
+}
+#tt{
+	font-size: 30px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+#err{
+	background: #f9b1a1;
+	color: red;
+	border: solid;
+	border-color: red;
+	margin: 0px;
+}
+.inpt{
+	width: 96%;
+	margin: 2%;
+	font-size: 18px;
+	color: black;
+	background: transparent;
+	border: none;
+	border-bottom: solid;
+	border-color: black;
+}
+.inpt:focus{
+	outline: none;
+}
+button{
+	background: #003459;
+	font-size: 15px;
+	padding: 7px;
+	color: white;
+	border: solid;
+	width: 50%;
+	border-color: #003459;
+	border-radius: 10px;
+}
+.lnk{
+	width: 98%;
+	margin: 1%;
+	font-size: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+.lnk-a{
+	text-decoration: none;
+	color: black;
+}

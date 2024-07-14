@@ -1,0 +1,126 @@
+body{
+	font-family: Cambria Math;
+	background: #003459;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+.d-tt{
+	color: white;
+	width: 380px;
+	font-size: 19px;
+	display: flex;
+	justify-content: space-between;
+}
+#game{
+	display: none;
+}
+#instructions{
+	text-align: left;
+	color: white;
+	font-size: 20px;
+	width: 380px;
+}
+#Withdraw{
+	font-size: 17px;
+	padding: 7px;
+	border: solid;
+	border-color: red;
+	color: white;
+	background: red;
+	border-radius: 10px;
+}
+#quit{
+	font-size: 17px;
+	padding: 7px;
+	padding-left: 14px;
+	padding-right: 14px;
+	border: solid;
+	margin: 10px;
+	border-color: green;
+	color: white;
+	background: green;
+	border-radius: 10px;
+}
+#board{
+	margin-top: 40px;
+	width: 380px;
+	background: #007ea7;
+	padding: 5px;
+	border-radius: 10px;
+	height: 380px;
+}
+.bdr{
+	width: 23%;
+	border-radius: 9px;
+	background: #003459;
+	margin: 1%;
+	height: 23%;
+	float: left;
+	border: solid;
+	border-color: #003459;
+}
+.bdr-img{
+	cursor: none;
+	width: 30px;
+	height: 30px;
+}
+#err{
+	border: solid;
+	width: 300px;
+	padding: 8px;
+	font-size: 14px;
+	display: none;
+	color: red;
+	border-color: red;
+	background: #fbb2b2;
+}
+#cur{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border: solid;
+	border-color: white;
+	background: transparent;
+	border-radius: 200px;
+}
+#btn-play{
+	color: white;
+	background: black;
+	border: solid;
+	border-color: black;
+	font-size: 23px;
+	padding: 10px;
+	border-radius: 10px;
+}
+#btn-play:hover{
+	box-shadow:0px 0px 10px black;
+}
+#msg{
+	margin: 10px;
+	width: 300px;
+	margin-top: 10vh;
+	padding: 10px;
+	background: white;
+	box-shadow: inset 0px 0px 10px black;
+	display: flex;
+	font-size: 50px;
+	font-weight: bold;
+	color: red;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-radius: 10px;
+	display: none;
+}
+#logout{
+	background: transparent;
+	color: white;
+	padding: 7px;
+	width: 100px;
+	border-radius: 10px;
+	margin: 10px;
+	font-size: 15px;
+	border: solid;
+	border-color: transparent;
+}

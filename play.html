@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mining Gem</title>
+	<link rel="stylesheet" type="text/css" href="/static/style/play.css">
+	<link rel="shortcut icon" href="/static/icons/favicon.png">
+</head>
+<body>
+<center>
+	<p id="err">Mine the other block</p>
+	<div id="details">
+		<p class="d-tt" style="font-size:25px;font-weight: bold;">{{details.name}} <span>Coins: <span id="coins" style="color:yellow;">{{details.coins}}</span><i class="material-icons" style="color: yellow;font-size:14px;padding: 0px;margin: 0px;">paid</i></span></p>
+		<div id="instructions">
+			<p class="d-tt">Instructions:-</p>
+			(i) To participate in the game, you must pay 500 coins.<br>
+			(ii) If you successfully mine a diamond, you win 250 coins.<br>
+			(iii) Mining a bomb ends the game with no winnings.<br>
+			(iv) If you choose to quit, you'll get a refund of 500 coins but no winnings.<br>
+			(v) If you withdraw during the game, your winnings will be deposited into your account.<br>
+			<br>
+		</div>
+		<div style="width: 380px;">
+			<button id="btn-play" onclick="start_game()">Play 500<i class="material-icons" style="color: yellow;font-size:18px;padding: 0px;margin: 0px;">paid</i></button><br>
+			<a href="/login"><button id="logout">Logout</button></a>
+		</div>
+	</div>
+	<div id="game">
+		<p class="d-tt"><span style="font-size:30px;">Won: <span id="won" style="color: yellow;">0</span><i class="material-icons" style="color: yellow;font-size:14px;padding: 0px;margin: 0px;">paid</i></span><button id="Withdraw" onclick="Withdraw()">Withdraw</button></p>
+		<div id="board">
+			<button class="bdr" onclick="change(0)"></button>
+			<button class="bdr" onclick="change(1)"></button>
+			<button class="bdr" onclick="change(2)"></button>
+			<button class="bdr" onclick="change(3)"></button>
+			<button class="bdr" onclick="change(4)"></button>
+			<button class="bdr" onclick="change(5)"></button>
+			<button class="bdr" onclick="change(6)"></button>
+			<button class="bdr" onclick="change(7)"></button>
+			<button class="bdr" onclick="change(8)"></button>
+			<button class="bdr" onclick="change(9)"></button>
+			<button class="bdr" onclick="change(10)"></button>
+			<button class="bdr" onclick="change(11)"></button>
+			<button class="bdr" onclick="change(12)"></button>
+			<button class="bdr" onclick="change(13)"></button>
+			<button class="bdr" onclick="change(14)"></button>
+			<button class="bdr" onclick="change(15)"></button>
+		</div>
+		<center style="width:370px;margin: 10px;"><button onclick="quit()" id="quit">Quit</button></center>
+	</div>
+	<div id="msg">
+		You lost!
+	</div>
+</center>
+
+<script type="text/javascript">
+	{% if details %}
+		localStorage.setItem("email","{{details.email}}");
+		localStorage.setItem("coins","{{details.coins}}");
+		localStorage.setItem("name","{{details.name}}");
+	{% endif %}
+</script>
+<script type="text/javascript" src="/static/script/index.js"></script>
+</body>
+</html>
